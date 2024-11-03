@@ -2,8 +2,7 @@ import Link from 'next/link'
 import React from 'react'
 import Image from "next/image";
 import { ButtonComponent } from '../components';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faRightToBracket } from '@fortawesome/free-solid-svg-icons';
+import { TbLogin2 } from "react-icons/tb";
 
 const Navbar = () => {
     return (
@@ -18,7 +17,7 @@ const Navbar = () => {
                     <Link href={"/products/item"}>Items</Link>
                     <Link href={"/about"}>About</Link>
                     <Link href={"/orders/cart"}>Cart</Link>
-                    <Link href={"/users/login"}><ButtonComponent className='flex items-center'>Login<FontAwesomeIcon icon={faRightToBracket} className='size-5 ms-2'/></ButtonComponent></Link>
+                    <Link href={"/users/login"}><ButtonComponent className='flex items-center'>Login<TbLogin2 className='size-6 ms-2' /></ButtonComponent></Link>
                 </div>
             </div>
         </nav>
