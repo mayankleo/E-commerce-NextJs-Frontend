@@ -1,0 +1,15 @@
+@use 'sass:color';
+
+:root {
+
+  $accent: hsl(270, 90%, 40%);
+  --accent: #{$accent};
+  --accent-light: #{color.adjust($accent, $alpha: -0.3)};
+
+  $background: hsl(0, 0%, 7%);
+  --background: #{$background};
+
+  $foreground: hsl(0, 0%, 100%);
+  --foreground: #{$foreground};
+
+}
